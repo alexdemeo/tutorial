@@ -7,7 +7,7 @@ doc: Details of items for an order. Each row represents the different items that
 owner: chadgable@gable.ai
 schema:
   - name: order_id
-    doc: The identifier of the order the item is associated with
+    doc: The identifier of the order the item is associated withs
     type: int32
   - name: product_id
     doc: The identifier of the product that was ordered
