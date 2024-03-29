@@ -128,6 +128,7 @@ jobs:
             # Can either be specified as a space separated list ('event1.proto event2.proto'), or 
             # a multiline string
             data-asset-options: |
-              --project-root ../../pyspark \
-              --spark-job-entrypoint "job.py --final_output_table pnw_bookings_30_days" \
-              --csv-schema-file ../../pyspark/schemas.csv
+              --source-type pyspark \
+              --project-root ./pyspark \
+              --spark-job-entrypoint job.py \
+              --csv-schema-file ./pyspark/schemas.csv
